@@ -9,7 +9,7 @@ on:
       - master
 
 jobs:
-  build:
+  tests:
     runs-on: ubuntu-24.04
 
     strategy:
@@ -19,7 +19,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
